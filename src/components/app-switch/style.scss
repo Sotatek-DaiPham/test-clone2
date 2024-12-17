@@ -1,0 +1,17 @@
+  .ant-switch {
+    min-width: 36px !important;
+    height: 20px !important;
+    line-height: 20px !important;
+    background-color: var(--color-stroke-primary-2) !important;
+    .ant-switch-handle {
+      width: 16px !important;
+      height: 16px !important;
+      padding: 0;
+    }
+  }
+  .ant-switch-checked{
+      background-color: var(--color-fill-success) !important;
+      .ant-switch-handle {
+        inset-inline-start: calc(100% - 18px) !important;
+      }
+  }

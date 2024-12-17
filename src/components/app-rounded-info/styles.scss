@@ -1,0 +1,7 @@
+.app-rounded-info {
+  &--disabled {
+    background: var(--color-neutral-2);
+    color: var(--color-neutral-7);
+    cursor: not-allowed;
+  }
+}

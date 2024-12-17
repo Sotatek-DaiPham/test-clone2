@@ -1,0 +1,185 @@
+.leaderboard-app-table {
+  .ant-table {
+    background: transparent !important;
+    .ant-table-content > table {
+      margin-top: -12px !important;
+      margin-bottom: -12px !important;
+      border-collapse: separate !important;
+      border-spacing: 0px 12px !important;
+      tbody {
+        .ant-table-measure-row {
+          display: none !important;
+        }
+      }
+    }
+
+    .ant-table-thead {
+      .ant-table-cell {
+        color: var(--color-neutral-7) !important;
+        background-color: var(--color-neutral-2) !important;
+        font-size: 16px !important;
+        line-height: 24px !important;
+        // font-weight: 400 !important;
+        border-bottom: 1px solid var(--color-neutral-4);
+        &::before {
+          background: transparent !important;
+        }
+        &:first-child {
+          border-top-left-radius: 12px !important;
+          border-bottom-left-radius: 12px !important;
+        }
+        &:last-child {
+          border-top-right-radius: 12px !important;
+          border-bottom-right-radius: 12px !important;
+        }
+      }
+      .ant-table-column-sorters {
+        justify-content: unset !important;
+        .ant-table-column-title {
+          flex: unset !important;
+        }
+        .ant-table-column-sorter {
+          .ant-table-column-sorter-up,
+          .ant-table-column-sorter-down {
+            color: var(--color-neutral-5) !important;
+          }
+          .active {
+            color: var(--color-primary-main) !important;
+          }
+        }
+      }
+    }
+    .ant-table-tbody {
+      .ant-table-placeholder {
+        background: transparent !important;
+        .ant-table-cell {
+          background: var(--color-neutral-2) !important;
+          border-radius: 12px !important;
+          border: none !important;
+          .ant-table-expanded-row-fixed {
+            background: var(--color-neutral-2) !important;
+            border-radius: 12px !important;
+          }
+        }
+      }
+      tr.ant-table-row {
+        margin-bottom: 12px !important;
+        border-radius: 12px !important;
+      }
+      .ant-table-row {
+        background: var(--color-neutral-2) !important;
+        .ant-table-cell {
+          color: var(--color-neutral-9) !important;
+          background-color: var(--color-neutral-2) !important;
+          font-size: 16px !important;
+          line-height: 24px !important;
+          border: none !important;
+          &::before {
+            background: transparent !important;
+          }
+          &:first-child {
+            border-top-left-radius: 12px !important;
+            border-bottom-left-radius: 12px !important;
+          }
+          &:last-child {
+            border-top-right-radius: 12px !important;
+            border-bottom-right-radius: 12px !important;
+          }
+        }
+        .ant-table-cell-row-hover {
+          background: var(--color-neutral-3) !important;
+        }
+      }
+    }
+  }
+}
+
+.app-table {
+  .ant-table {
+    background: transparent;
+    .ant-table-content {
+      border-bottom-left-radius: 12px !important;
+      border-bottom-right-radius: 12px !important;
+    }
+    .ant-table-thead {
+      .ant-table-cell {
+        color: var(--color-neutral-7);
+        background-color: var(--color-neutral-4);
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+        padding-top: 9.5px;
+        padding-bottom: 9.5px;
+        border: none !important;
+        &::before {
+          background: transparent !important;
+        }
+        &:first-child {
+          border-top-left-radius: 16px;
+        }
+        &:last-child {
+          border-top-right-radius: 16px;
+        }
+      }
+      .ant-table-column-sorters {
+        justify-content: unset !important;
+        .ant-table-column-title {
+          flex: unset !important;
+        }
+        .ant-table-column-sorter {
+          .ant-table-column-sorter-up,
+          .ant-table-column-sorter-down {
+            color: var(--color-neutral-5) !important;
+          }
+          .active {
+            color: var(--color-primary-main) !important;
+          }
+        }
+      }
+    }
+    .ant-table-tbody {
+      .ant-table-placeholder {
+        background: transparent !important;
+        .ant-table-cell {
+          background: var(--color-neutral-2) !important;
+          border: none !important;
+          .ant-table-expanded-row-fixed {
+            background: var(--color-neutral-2) !important;
+          }
+        }
+      }
+      tr.ant-table-row {
+        margin-bottom: 12px !important;
+      }
+      .ant-table-row {
+        background: var(--color-neutral-2) !important;
+
+        &:last-child {
+          .ant-table-cell {
+            &:first-child {
+              border-bottom-left-radius: 12px;
+            }
+            &:last-child {
+              border-bottom-right-radius: 12px;
+            }
+          }
+        }
+        .ant-table-cell {
+          color: var(--color-neutral-9);
+          background-color: var(--color-neutral-2);
+          font-size: 16px;
+          line-height: 24px;
+          border: none;
+          border-bottom: 1px solid var(--color-neutral-4);
+
+          &::before {
+            background: transparent;
+          }
+        }
+        .ant-table-cell-row-hover {
+          background: var(--color-neutral-3);
+        }
+      }
+    }
+  }
+}

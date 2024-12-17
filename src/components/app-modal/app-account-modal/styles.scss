@@ -1,0 +1,67 @@
+.account-modal {
+  .ant-modal-footer {
+    display: none;
+  }
+
+  .ant-modal-content {
+    background: var(--rk-colors-modalBackground, #373738);
+    position: relative;
+    border-radius: 24px;
+    padding: 16px;
+
+    .close-button {
+      background: #ffffff14;
+      height: 28px;
+      width: 28px;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #ffffff0a;
+      position: absolute;
+      right: 14px;
+      top: 14px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8px;
+    gap: 12px;
+
+    img {
+      width: 74px;
+      height: 74px;
+      border-radius: 100%;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+
+    button {
+      width: 50%;
+      background: #e0e8ff1a;
+      height: 53px;
+      border-radius: 12px;
+      transition: .125s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        background: #e0e8ff33;
+        transform: scale(1.025);
+      }
+
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+}

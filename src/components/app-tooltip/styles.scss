@@ -1,0 +1,22 @@
+.app-tooltip-ellipsis {
+  .ant-tooltip-content .ant-tooltip-inner > div {
+    max-height: 80dvh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+  }
+  .ant-tooltip-content {
+    .ant-tooltip-inner {
+      background: var(--color-neutral-3) !important;
+    }
+  }
+}
+.ant-tooltip.app-tooltip-ellipsis {
+  --antd-arrow-background-color: var(--color-neutral-3) !important;
+}
+
+.ellipsis-text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+}

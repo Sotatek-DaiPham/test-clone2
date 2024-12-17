@@ -1,0 +1,21 @@
+@import "@/assets/scss/responsive.scss";
+
+.initial-buy-modal {
+  .ant-modal-content {
+    // background-color: #23262f !important;
+    @include mobile {
+      padding: 16px;
+    }
+  }
+
+  .ant-form-item-has-error {
+    .ant-select-selector {
+      background: transparent !important;
+      border: none !important;
+    }
+  }
+
+  .ant-form-item {
+    margin-bottom: 13px;
+  }
+}

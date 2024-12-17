@@ -1,0 +1,35 @@
+.app-textarea {
+  outline: none !important;
+  box-shadow: none !important;
+
+  color: var(--color-text-primary-2) !important;
+  border: 1px solid red !important;
+  background-color: transparent !important;
+
+  &:hover {
+    border-color: var(--color-border-primary-1) !important;
+    background-color: unset !important;
+  }
+  &:not(:hover) {
+    // border-color: var(--color-border-primary-1) !important;
+    // background-color: unset !important;
+  }
+  &:focus {
+    border-color: var(--color-primary-default) !important;
+  }
+  &:focus-within {
+    border-color: var(--color-primary-default) !important;
+  }
+  .ant-input-outlined {
+    border-color: var(--color-border-primary-1) !important;
+  }
+  &::placeholder {
+    color: var(--color-text-disable) !important;
+  }
+}
+
+.app-textarea-abc {
+  .ant-input-status-error {
+    border-color: var(--color-fill-error) !important;
+  }
+}

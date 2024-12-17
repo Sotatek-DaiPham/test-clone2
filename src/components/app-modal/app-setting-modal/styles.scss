@@ -1,0 +1,12 @@
+@import "@/assets/scss/responsive.scss";
+
+.trade-setting-modal {
+  .ant-modal-content {
+    @include mobile {
+      padding: 16px;
+    }
+    .ant-form-item {
+      margin-bottom: 12px;
+    }
+  }
+}

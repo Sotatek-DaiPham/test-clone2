@@ -1,0 +1,54 @@
+@import "@/assets/scss/_colors.scss";
+
+.app-pagination {
+  margin-top: 16px;
+  &.ant-pagination {
+    margin-top: 16px !important;
+    li {
+      color: $color-grey-5;
+    }
+
+    .ant-pagination-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      background-color: $color-black-1;
+      min-width: 35px;
+      height: 35px;
+      font-size: 16px;
+      border: none;
+      a {
+        color: $color-grey-11;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 16px;
+      }
+    }
+
+    .ant-pagination-next,
+    .ant-pagination-prev {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .ant-pagination-item-active {
+      background-color: transparent;
+      border: 1px solid $color-primary;
+
+      a {
+        color: $color-primary;
+      }
+
+      &:hover {
+        border: none;
+      }
+    }
+  }
+}

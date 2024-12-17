@@ -1,0 +1,17 @@
+@import "@/assets/scss/_colors.scss";
+@import "@/assets/scss/responsive.scss";
+
+@mixin container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@mixin hideLongText($line-number) {
+  -webkit-line-clamp: $line-number;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+}

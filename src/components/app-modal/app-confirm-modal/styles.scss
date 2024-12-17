@@ -1,0 +1,10 @@
+@import "@/assets/scss/responsive.scss";
+
+.confirm-modal {
+  .ant-modal-content {
+    background-color: #23262f !important;
+    @include mobile {
+      padding: 16px;
+    }
+  }
+}

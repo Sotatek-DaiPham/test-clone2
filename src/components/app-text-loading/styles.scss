@@ -1,0 +1,20 @@
+.app-text-loading {
+  background-color: var(--color-neutral-5);
+  border-radius: 4px;
+  animation: shimmer 1.2s infinite linear;
+  height: 20px;
+  display: block;
+  width: 200px;
+}
+
+@keyframes shimmer {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}

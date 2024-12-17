@@ -1,0 +1,54 @@
+@import "@/assets/scss/_colors.scss";
+
+.trade-section {
+  .ant-tabs {
+    .ant-tabs-nav::before {
+      display: none;
+    }
+
+    .ant-tabs-ink-bar {
+      display: none;
+    }
+
+    .ant-tabs-nav-list {
+      width: 100%;
+      padding: 4px;
+      background-color: var(--color-neutral-2);
+      border-radius: var(--radius-rounded);
+      .ant-tabs-tab {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: var(--radius-rounded);
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+
+      .ant-tabs-tab-btn {
+        font-size: 16px;
+        color: var(--color-neutral-7);
+        font-weight: 400;
+      }
+
+      .ant-tabs-tab-active {
+        background-color: var(--color-primary-main);
+        .ant-tabs-tab-btn {
+          color: var(--color-neutral-1) !important;
+        }
+      }
+    }
+  }
+
+  // overwrite  antd styles
+  .ant-form-item-has-error {
+    .ant-select-selector {
+      background: transparent !important;
+      border: none !important;
+    }
+  }
+
+  .ant-form-item {
+    margin-bottom: 0;
+  }
+}

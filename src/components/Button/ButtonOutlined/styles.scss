@@ -1,0 +1,65 @@
+@import "@/assets/scss/_colors.scss";
+
+.btn-outlined {
+  border-radius: 90px;
+  color: $color-neutral-white;
+  border: 2px solid $color-grey-6;
+  background: transparent;
+  height: unset;
+  font-weight: 700;
+
+  span {
+    line-height: 1;
+  }
+
+  &--full {
+    width: 100%;
+  }
+
+  &--primary {
+    &:disabled {
+      border: 2px solid $color-grey-2;
+      background: $color-grey-2;
+      opacity: 0.5 !important;
+      color: $color-grey-8;
+    }
+
+    &:hover {
+      border: 2px solid $color-grey-2 !important;
+      background: $color-grey-2 !important;
+      color: $color-grey-8 !important;
+    }
+  }
+
+  &--secondary {
+    border: 2px solid $color-primary;
+    color: $color-primary;
+
+    &:active {
+      border: 2px solid $color-tertiary !important;
+      color: $color-tertiary !important;
+      background: transparent !important;
+    }
+
+    &:hover {
+      border: 2px solid $color-tertiary !important;
+      color: $color-tertiary !important;
+      background: transparent !important;
+    }
+  }
+
+  &--large {
+    padding: 16px 24px;
+    font-size: 16px;
+  }
+
+  &--medium {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+
+  &--small {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}

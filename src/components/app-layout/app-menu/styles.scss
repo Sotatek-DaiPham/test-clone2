@@ -1,0 +1,70 @@
+@import "@/assets/scss/_colors.scss";
+@import "@/assets/scss/responsive.scss";
+
+.app-menu {
+  background: var(--color-neutral-2);
+  padding: 0 20px;
+  overflow-y: scroll;
+  max-height: 80vh;
+  li {
+    span {
+      color: var(--color-neutral-7);
+      font-weight: 500;
+      line-height: 16px;
+      font-size: 16px;
+    }
+
+    img {
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  .ant-menu-item {
+    height: 48px;
+    border-radius: 256px;
+    &:active {
+      background-color: transparent !important;
+    }
+    padding: 12px 15px !important;
+    margin-inline: 0;
+    margin-block: 0;
+    margin-bottom: 8px;
+  }
+
+  .ant-menu-item-divider {
+    height: 40px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 95%;
+      height: 1px;
+      background: var(--color-neutral-4);
+      bottom: 0;
+      left: 0;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .ant-menu-item-selected {
+    padding: 10px 15px;
+    background-color: var(--color-primary-main);
+    border-radius: 256px;
+    &:active {
+      background-color: var(--color-primary-main) !important;
+    }
+    img {
+      filter: brightness(0) saturate(100%) invert(0%) sepia(6%) saturate(7500%)
+        hue-rotate(259deg) brightness(93%) contrast(107%);
+    }
+    span {
+      font-weight: 700 !important;
+      color: var(--color-neutral-1);
+    }
+  }
+}

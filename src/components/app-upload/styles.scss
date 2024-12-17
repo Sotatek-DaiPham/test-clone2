@@ -1,0 +1,45 @@
+@import "@/assets/scss/responsive.scss";
+
+.basic-upload {
+  .ant-upload-select {
+    @include mobile {
+      width: 100%;
+    }
+  }
+  span.ant-upload {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 20px;
+    min-width: 200px;
+    border-radius: 8px;
+    border: 1px dashed var(--color-neutral-5);
+    width: fit-content;
+    background: transparent;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 8px;
+      width: 100%;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
+
+  &__image-box {
+    position: relative;
+    img {
+      pointer-events: none;
+      width: auto !important;
+      height: 100px !important;
+      object-fit: cover;
+    }
+  }
+
+  &__remove {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+  }
+}

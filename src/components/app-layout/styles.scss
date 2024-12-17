@@ -1,0 +1,12 @@
+@import "@/assets/scss/_colors.scss";
+@import "@/assets/scss/responsive.scss";
+
+.ant-layout {
+  background: transparent !important;
+}
+
+.app-layout {
+  min-height: 100vh !important;
+  overflow: hidden !important;
+  background: var(--color-neutral-1) !important;
+}

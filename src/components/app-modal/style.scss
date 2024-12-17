@@ -1,0 +1,10 @@
+@import "@/assets/scss/responsive.scss";
+
+.app-modal {
+  .ant-modal-content {
+    border-radius: 16px;
+    border: 1px solid var(--color-neutral-4);
+    background: var(--color-neutral-2);
+    box-shadow: 0px 40px 32px -24px rgba(15, 15, 15, 0.5);
+  }
+}

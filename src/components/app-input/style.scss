@@ -1,0 +1,53 @@
+textarea.app-input {
+  border-radius: 20px;
+}
+
+.app-input {
+  border-radius: var(--radius-rounded);
+  padding: 8px 12px 8px 16px;
+  border: 1px solid var(--color-neutral-4);
+  background: transparent;
+  color: var(--color-neutral-white);
+
+  &--secondary {
+    background: rgba(35, 38, 47, 0.6);
+  }
+
+  &:hover,
+  &:focus-within,
+  &:focus {
+    border-color: var(--color-neutral-4);
+    background: transparent;
+    box-shadow: none;
+    .ant-input-suffix {
+      img {
+        filter: brightness(0) saturate(100%) invert(33%) sepia(52%)
+          saturate(2642%) hue-rotate(241deg) brightness(102%) contrast(101%);
+      }
+    }
+  }
+
+  &.ant-input-status-error {
+    background: transparent !important;
+  }
+
+  &::placeholder {
+    color: var(--color-neutral-5) !important;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .ant-input-clear-icon {
+    color: #23262f;
+    &:hover {
+      color: #23262f90;
+    }
+  }
+}
+.scroll-text-area::-webkit-scrollbar {
+  display: none;
+  resize: none;
+}
+.scroll-text-area {
+  overflow-y: hidden !important;
+}

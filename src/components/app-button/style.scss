@@ -1,0 +1,72 @@
+.app-button {
+  border-radius: 8px;
+}
+
+.app-button.large {
+  height: 48px !important;
+}
+
+.app-button.middle {
+  height: 40px !important;
+}
+
+.app-button.small {
+  height: 32px !important;
+}
+
+.app-button:hover {
+  opacity: 0.8;
+}
+
+.app-button.outline {
+  border-radius: 256px;
+  color: var(--color-neutral-7) !important;
+  outline: none !important;
+  border: 1px solid var(--color-neutral-5);
+  background: transparent !important;
+  &:active {
+    border-color: var(--color-primary-main) !important;
+  }
+  &:hover {
+    border-color: var(--color-primary-main) !important;
+  }
+}
+
+.app-button.outline-primary {
+  border-radius: 256px;
+  color: var(--color-primary-main) !important;
+  background-color: transparent !important;
+  border: 2px solid var(--color-primary-main) !important;
+  outline: none !important;
+}
+
+.app-button.primary {
+  border-radius: 256px;
+  color: var(--color-neutral-1) !important;
+  background-color: var(--color-primary-main) !important;
+  border: 1px solid var(--color-primary-main) !important;
+  outline: none !important;
+}
+
+.app-button.teriary {
+  border-radius: 256px;
+  color: var(--color-neutral-1) !important;
+  background-color: var(--color-neutral-white) !important;
+  border: 1px solid var(--color-neutral-white) !important;
+  outline: none !important;
+}
+
+.app-button.secondary {
+  border-radius: 256px;
+  color: var(--color-neutral-9) !important;
+  border: 1px solid var(--color-neutral-3) !important;
+  background-color: var(--color-neutral-3) !important;
+  outline: none !important;
+  box-shadow: 0px -2px 0px 0px rgba(191, 195, 184, 0.15) inset;
+  backdrop-filter: blur(59.400001525878906px);
+}
+
+.app-button:disabled {
+  opacity: 0.4 !important;
+  cursor: not-allowed !important;
+}
